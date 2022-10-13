@@ -1,0 +1,18 @@
+? Select a new version (currently 55.1.1) (Use arrow keys)
+❯ Patch (55.1.2) 
+  Minor (55.2.0) 
+  Major (56.0.0) 
+  Prepatch (55.1.2-alpha.0) 
+  Preminor (55.2.0-alpha.0) 
+  Premajor (56.0.0-alpha.0) 
+  Custom Prerelease 
+  Custom Version [17D[17C[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G? Select a new version (currently 55.1.1) Patch (55.1.2)[56D[56C
+
+Changes:
+ - @salesforce/plugin-templates: 55.1.0 => 55.1.2
+ - @salesforce/templates: 55.1.0 => 55.1.2
+
+
+> @salesforce/plugin-templates@55.1.2 version /home/runner/work/salesforcedx-templates/salesforcedx-templates/packages/plugin-templates
+> oclif readme && git add README.md
+
