@@ -15,8 +15,8 @@ exports.preCommit = (props) => {
     );
     shell.exec(`yarn install --ignore-scripts --package-lock-only --no-audit`);
     shell.exec(`git add .`);
-    shell.exec(
-      `git commit --allow-empty -m "chore: updated version ${props.version} [ci skip]"`
-    );
+    ##shell.exec(
+      ##`git commit --allow-empty -m "chore: updated version ${props.version} [ci skip]"`
+    ##);
   }
 }
