@@ -7,7 +7,7 @@
 
 const shell = require('shelljs');
 
-export function preCommit(props) {
+exports.preCommit = (props) => {
   if (props && props.version) {
     shell.exec(`yarn`);
     shell.exec(
