@@ -23,7 +23,7 @@ jobs:
           skip-version-file: true
           output-file: false
           tag-prefix: ""
-          pre-commit: yarn ts-node ./scripts/bump-lerna-version.ts
+          pre-commit: ./scripts/bump-lerna-version.ts
       - name: Create Github Release
         uses: actions/create-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
