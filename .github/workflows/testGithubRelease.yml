@@ -8,7 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      ## - uses: "./.github/actions/setup-publish"
       - name: Conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@d360fad3a42feca6462f72c97c165d60a02d4bf2
@@ -16,9 +15,10 @@ jobs:
           git-user-name: MY-BOT
           git-user-email: randi274@gmail.com
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          version-file: "./lerna.json,./packages/plugin-templates/package.json,./packages/templates/package.json"
-          output-file: "false"
+          skip-version-file: true
+          output-file: false
           tag-prefix: ""
+          pre-commit: ts-node ./scripts/bump-lerna-version.ts
       - name: Create Github Release
         uses: actions/create-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
