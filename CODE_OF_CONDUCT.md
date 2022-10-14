@@ -2,8 +2,6 @@
 
 ## About the Code of Conduct
 
-
-
 Equality is a core value at Salesforce. We believe a diverse and inclusive
 community fosters innovation and creativity, and are committed to building a
 culture where everyone feels included.
